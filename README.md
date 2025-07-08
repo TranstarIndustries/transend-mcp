@@ -13,8 +13,8 @@ Create virtual environment and activate it:
 
 Install dependencies:
 
-    uv add mcp arxiv
+    uv add mcp transend
 
 Launch the inspector:
 
-    npx @modelcontextprotocol/inspector uv run research_server.py
+    npx @modelcontextprotocol/inspector uv run server.py
