@@ -90,8 +90,8 @@ class MCP_ChatBot:
         server_params = StdioServerParameters(
             command="uv",  # Executable
             args=["run", "server.py"],  # Optional command line arguments
-            env={'TRANSEND_API_KEY': os.getenv('TRANSEND_API_KEY'),
-                 'TRANSEND_API_TOKEN': os.getenv('TRANSEND_API_TOKEN')
+            env={'TRANSEND_API_KEY': os.getenv('TRANSEND_API_KEY', ''),
+                 'TRANSEND_API_TOKEN': os.getenv('TRANSEND_API_TOKEN', '')
                 }
         )
         async with stdio_client(server_params) as (read, write):
